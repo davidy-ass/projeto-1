@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color:white;
+            font: normal 18pt arial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+</body>
+ <script>
+//window.document.write('Óla, mundo')//Essa é a forma mais fácio de adiciona um elemento em JavaScript
+// var corpo = window.document.body 
+// var p1 = window.document.getElementsByClassName('p')[1]
+//  window.document.write('esta escrito assim: '+ p1.innerText)
+// p1.style.color = 'blue'
+// corpo.style.background = 'black'
+// document.write(p1.innerHTML)
+var d = window.document.getElementById('msg')
+d.style.background = 'green'
+// d.innerText = 'clique em mim logo!'
+window.document.getElementById('msg').innerText = 'ola'
+ </script>
+</html>
