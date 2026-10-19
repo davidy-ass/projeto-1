@@ -110,7 +110,7 @@ section {
       }
     }
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       height: 200px;
       width: 100%;
@@ -186,4 +186,55 @@ section {
       }
     }
   }
+}
+
+
+section {
+    
+    & .list {
+
+        & .item {
+            transform: translateX(100vw);
+            transition: 0.5s;
+            opacity: 0;
+
+            & .car-img {
+                & img {
+                    transform: rotate(0);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+
+
+                }
+            }
+
+            & .contain {
+
+                & .car-information, h2, .descrition, .informacion {
+                    transform: translateX(200px);
+                    transition: 0.7s;
+                    transition-delay: 0.3s;
+
+                }
+
+                & h2 {
+                    transition-delay: 0.5s;
+                }
+
+                & .descrition {
+                    transition-delay: 0.7s;
+                }
+
+                & .informacion {
+                    transition: 0.9s;   
+                }
+            }
+        }
+
+        & .active {
+            transform: translateX(0);
+            transition: 0.5s;
+            opacity: 1;
+        }
+    }
 }
